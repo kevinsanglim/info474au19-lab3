@@ -148,6 +148,24 @@
         svgContainer.append('g')
             .attr('transform', 'translate(50, 0)')
             .call(yAxis)
+
+        // text label for the y axis
+        svgContainer.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0)
+        .attr("x",0 - 250)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Life Expectancy");  
+
+        // text label for the y axis
+        svgContainer.append("text")
+        .attr("y", 475)
+        .attr("x",250)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Fertility");  
+
     }
 
     
